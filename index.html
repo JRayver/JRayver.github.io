@@ -7,73 +7,7 @@
   <title>Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <style>
-    body {
-      background-color: #f8f9fa68;
-    }
-
-    .container-fluid#home {
-      background-image: url(mainbg.webp);
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .navbar {
-      background-color: rgba(255, 255, 255, 0.447);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    }
-
-    .navbar-brand {
-      font-weight: 600;
-    }
-
-    .transparent {
-      background-color: rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      border-radius: 10px;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      padding: 20px;
-      margin-top: 250px;
-    }
-
-    .project-card {
-      background-color: rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .project-content {
-      padding: 20px;
-    }
-
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    section {
-      padding: 40px 0;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -103,7 +37,7 @@
 
   <header class="container-fluid" id="home">
     <div class="row g-0 full-height-row align-items-center justify-content-center">
-      <div class="col-md-8 transparent text-center">
+      <div class="col-md-8 transparent-home text-center">
         <img src="prof.jpg" alt="Profile Picture" class="profile-img mb-3">
         <h1>Jhon Rayver E. Martinez</h1>
         <p>BSIT | 3rd Year</p>
@@ -111,43 +45,44 @@
     </div>
   </header>
 
-  <section id="about" class="container-fluid">
-    <h2 class="text-center">About Me</h2>
+  <section id="about" class="container">
+    <h2 class="text-center fw-bold">About Me</h2>
     <div class="row">
-      <div class="col-md-8 offset-md-2">
-        <p>I'm Jhon Rayver E. Martinez, 20 years old currently 3rd year BSIT in Polytechnic University of the Philippines, live in San Antonio Sto. Tomas Batangas. My hobby is gaming, drawing, watching and reading.</p>
+      <div class="col-md-8 offset-md-2 about-con">
+        <p>I'm Jhon Rayver E. Martinez, 20 years old currently 3rd year BSIT in Polytechnic University of the
+          Philippines, live in San Antonio Sto. Tomas Batangas. My hobby is gaming, drawing, watching and reading.</p>
       </div>
     </div>
   </section>
 
   <section id="activity" class="container">
-    <h2 class="text-center">My Activities</h2>
+    <h2 class="text-center mb-3 fw-bold">My Activities</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="project-card">
-          <img src="poco.png" class="card-img-top"
-            alt="Project One Screenshot">
+          <img src="poco.png" class="card-img-top" alt="Project One Screenshot">
           <div class="project-content">
             <h3>Activity 4</h3>
             <p>Device Showcase</p>
-            <a href="https://jrayver.github.io/Device_Showcase/" target="_blank" class="btn btn-outline-primary">View Activity</a>
+            <a href="https://jrayver.github.io/Device_Showcase/" target="_blank" class="btn btn-outline-primary">View
+              Activity</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="project-card">
-          <img src="ger.jpg" class="card-img-top"
-            alt="Project Two Screenshot">
+          <img src="ger.jpg" class="card-img-top" alt="Project Two Screenshot">
           <div class="project-content">
             <h3>Activity 5</h3>
             <p>Place Showcase</p>
-            <a href="https://jrayver.github.io/Place_Showcase/" target="_blank" class="btn btn-outline-primary">View Activity</a>
+            <a href="https://jrayver.github.io/Place_Showcase/" target="_blank" class="btn btn-outline-primary">View
+              Activity</a>
           </div>
         </div>
       </div>
   </section>
 
-  <footer class="bg-light text-center py-3">
+  <footer class="transparentF text-center py-3">
     <p>&copy; 2025 My Portfolio.</p>
   </footer>
 
